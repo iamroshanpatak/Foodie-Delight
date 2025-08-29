@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Delight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Foodie Delight Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn">Contact Us</a>
+  </header>
+
+  <!-- Home / Exclusive Menu -->
+<section id="home" class="hospitality-taste">
+  
+  <h1>Welcome to Foodie Delight</h1>
+  <p>
+    At Foodie Delight, we bring you the perfect blend of comfort, luxury, 
+    and unforgettable dining experiences. Nestled in a warm and inviting 
+    atmosphere, our hotel is designed for travelers who crave relaxation 
+    and food lovers who seek culinary excellence.
+  </p>
+  <p>
+    From cozy rooms to world-class dining, every detail is crafted to 
+    make your stay truly memorable. Whether you're here for business, 
+    leisure, or simply to indulge your taste buds, we have something 
+    special for you.
+  </p>
+  <h2>"Your Destination for Hospitality & Taste"</h2>
+</section>
+
+   <section id="home" class="menu-section">
+    <h2>Exclusive Menu</h2>
+    <p class="subtitle">Foodie Delight</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="assets/breakfast.png" alt="Egg Tartine">
+        <h3>Breakfast</h3>
+        <p>Egg Tartine - Creamy Avocado, Poached Egg, Arugula</p>
+        <a href="#">ORDER NOW</a>
+      </div>
+      <div class="menu-card">
+        <img src="assets/burger.png" alt="Burger & Fries">
+        <h3>Lunch</h3>
+        <p>Burger & Fries - Bold Burger, Crispy Fries Delight</p>
+        <a href="#">ORDER NOW</a>
+      </div>
+      <div class="menu-card">
+        <img src="assets/thakali.png" alt="Thakali Khana">
+        <h3>Dinner</h3>
+        <p>Thakali Khana - Authentic Thakali Delights</p>
+        <a href="#">ORDER NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extended Menu -->
+  <section id="menu" class="menu-grid extra-menu">
+    <div class="menu-card">
+      <img src="assets/english breakfast.png" alt="English Breakfast">
+      <h3>English Breakfast</h3>
+      <p>Classic English Breakfast Delight</p>
+      <span class="price">375 Rs</span>
+      <a href="#">ORDER NOW</a>
+    </div>
+    <div class="menu-card">
+      <img src="assets/salmon.png" alt="Salmon With Salad">
+      <h3>Salmon With Salad</h3>
+      <p>Fresh Salmon, Salad Perfection</p>
+      <span class="price">400 Rs</span>
+      <a href="#">ORDER NOW</a>
+    </div>
+    <div class="menu-card">
+      <img src="assets/stick and potatos.png" alt="Steak & Mash Potato">
+      <h3>Steak & Mash Potato</h3>
+      <p>Juicy Steak, Creamy Mashed Potatoes</p>
+      <span class="price">365 Rs</span>
+      <a href="#">ORDER NOW</a>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation" class="reservation-section" style="background-image:url('images/reservation-bg.jpg');">
+    <div class="reservation-box">
+      <h2>Book Your Table Now</h2>
+      <form>
+        <input type="date" required>
+        <input type="time" required>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="number" placeholder="How Many Persons?" required>
+        <button type="submit">Book Table</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about-section">
+    <div class="about-text">
+      <h1>Foodie Delight</h1>
+      <h2>Bringing Flavors to <b>Life</h2>
+      <p>At Foodie Delight, we believe that a great dining experience is not just about the food; it's a combination of delectable flavors, warm ambiance, and exceptional service.</p>
+    </div>
+    
+    <div class="about-img">
+      <img src="assets/Screenshot 2025-08-29 200248.png" alt="About Foodie Delight">
+    </div>
+
+     
+
+  </section>
+   <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><strong>Name:</strong> Niharika Shrestha</p>
+        <p><strong>Phone:</strong> <a href="tel:+977984013465">+977 984013465</a></p>
+        <p><strong>Email:</strong> <a href="mailto:niharikashrestha768@gmail.com">niharikashrestha768@gmail.com</a></p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Foodie Delight. All Rights Reserved. | Designed with ❤️ by Niharika Shrestha</p>
+    </div>
+  </footer>
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // scrolling down → hide header
+      header.style.top = "-100px"; 
+    } else {
+      // scrolling up → show header
+      header.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+</body>
+</html>
